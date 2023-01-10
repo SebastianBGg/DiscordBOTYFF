@@ -10,7 +10,7 @@ import javax.security.auth.login.LoginException;
 
 public class DiscordBot {
     public static void main(String[] args) throws LoginException {
-        JDA jda = JDABuilder.createDefault("MTAwODA5MzAwMzU5MzgxODE2Mw.GYvkGH.0QxB9xtqj01fbves7PZ09vbGorJg9-vl08JSis")
+        JDA jda = JDABuilder.createDefault("TOKEN")
                 .addEventListeners(new Readyevent(), new Messagelisteners(), new TalkingEvent())
                 .build();
         ListenerAdapter listener = new TalkingEvent.SpeakerDetector();
